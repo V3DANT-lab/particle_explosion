@@ -1,0 +1,14 @@
+# Particle Explosion Ball - dependencies
+# Python 3.9+
+#
+# Notes:
+#  * mediapipe 1.0 removed the legacy `mp.solutions.*` API, so this project
+#    uses the modern Tasks API (HandLandmarker) and needs the
+#    hand_landmarker.task model. setup.sh downloads it into ./models/.
+#  * Do NOT downgrade mediapipe below 1.0 - this code targets the Tasks API.
+pygame>=2.1.0
+PyOpenGL>=3.1.6
+PyOpenGL_accelerate>=3.1.6
+mediapipe>=1.0.0
+opencv-python>=4.5.0
+numpy>=1.24.0
